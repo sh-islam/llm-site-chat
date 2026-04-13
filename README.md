@@ -53,6 +53,11 @@ All settings are centralized in `config.py`:
 
 ```python
 URL = "https://example.com/"                   # target website
+PRIORITY_PAGES = [                             # subpages to scrape first (guaranteed)
+    "https://example.com/about/",
+    "https://example.com/contact/",
+]
+MAX_PAGES = 15                                 # maximum pages to scrape
 DB_DIR = "./dbs"                               # vector database storage path
 MODEL = "llama3.2"                             # Ollama model name
 OLLAMA_MODELS_DIR = "E:/AI tools/llm_models"   # Ollama model storage path
@@ -60,7 +65,6 @@ EMBEDDING_MODEL = "all-MiniLM-L6-v2"           # sentence-transformers model
 CHUNK_SIZE = 500                               # words per chunk
 CHUNK_OVERLAP = 50                             # word overlap between chunks
 TOP_K = 5                                      # chunks retrieved per query
-MAX_PAGES = 15                                 # maximum pages to scrape
 ```
 
 ## Usage
