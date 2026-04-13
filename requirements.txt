@@ -1,0 +1,4 @@
+crawl4ai
+sentence-transformers
+chromadb
+ollama
