@@ -2,6 +2,10 @@
 
 A local Retrieval-Augmented Generation (RAG) pipeline that enables natural language interaction with any website. The system scrapes a target URL, indexes its content into a vector database, and serves answers through a locally hosted LLM. All processing occurs on-device -- no cloud APIs, no external data transmission.
 
+## Demo
+
+https://github.com/user-attachments/assets/bd89515d-358b-4705-9de5-e158f86179db
+
 ## Overview
 
 1. A target website URL is provided via configuration
